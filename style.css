@@ -1,0 +1,37 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  width:100%;
+  padding: 50px;
+  background: black;
+}
+
+.content-container {
+  width:80%;
+  margin: 0 auto;
+  padding: 20px;
+  background:lightgrey;
+}
+
+.content-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.test-section {
+  float: left;
+  width: 30%;
+  padding:10px;
+  background: green;
+}
+
+
+.test-content {
+  background:red;
+
+}
