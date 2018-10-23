@@ -69,7 +69,7 @@
   width: 200px;
   height: 200px;
   background: black;
-  border: 3px solid grey;
+  border: 5px solid grey;
   margin: 20px auto;
   border-radius: 100%
 }
@@ -89,10 +89,42 @@
 
 .header-left-section .lower-content {
   margin-top:30px;
-  height: 180px;
+  /* height: 180px; */
+  padding: 20px 30px;
   border-radius: 6px;
   background: white;
 }
+
+.header-left-section .lower-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.socials-cnt {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.social  {
+  display: inline-block;
+  margin: 20px;
+}
+
+.social * {
+  color: rgb(229,229,229);
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social i {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
 
 .header-right-content {
   background: white;
