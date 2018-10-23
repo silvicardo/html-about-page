@@ -10,8 +10,26 @@
   border-radius: 6px;
   text-decoration: none;
   cursor: pointer;
-  background:orange;
+  color: white;
+  background:#DD5555;
   display: inline-block;
+}
+
+.btn:hover {
+  background: red;
+}
+
+i:hover {
+  cursor: pointer;
+  color:red;
+}
+
+h1 {
+  color: #DD5555;
+}
+
+h2, p, h3, h4 {
+  color: #7d7d7d
 }
 
 #main-container {
@@ -32,7 +50,6 @@
   width: 100%;
   padding: 20px;
   background: rgb(229,229,229);
-  color: black;
   text-align: center;
 }
 
@@ -45,13 +62,11 @@
 .header-left-section {
   float:left;
   width: 40%;
-  height: 100%;
 }
 
 .header-right-section {
   float: right;
   width: 60%;
-  height:100%;
 }
 
 .header-left-section .upper-content {
@@ -64,8 +79,7 @@
   overflow: hidden;
   width: 140px;
   height: 140px;
-  background: black;
-  border: 5px solid grey;
+  border: 3px solid grey;
   margin: 20px auto;
   border-radius: 100%
 }
@@ -78,6 +92,9 @@
   margin-bottom: 25px;
 }
 
+.header-left-section .upper-content .detail-cnt p {
+  text-align: justify;
+}
 .header-left-section .upper-content .detail-cnt *:not(.btn){
   margin: 20px;
 }
@@ -112,6 +129,11 @@
   text-decoration: none;
 }
 
+.social a:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .social i {
   display: block;
   font-size: 30px;
@@ -129,7 +151,6 @@
 
 .tool {
   width:95%;
-  height: auto;
   margin: 20px auto;
 }
 
@@ -164,18 +185,50 @@
 
 .tool-detail-content p {
   margin-top: 20px;
+  text-align: justify;
 }
 
 /* footer section */
 
 .footer-section {
-  height: 300px;
   padding: 20px;
-  background: yellow;
 }
 
 .footer-content {
-  height: 100%;
+  position: relative;
   border-radius: 6px;
-  background: blue;
+  padding: 40px;
+  background: white;
+}
+
+.footer-content > h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-content p a {
+  color: rgb(204,204,204);
+}
+
+.footer-content p a:hover {
+  color: red;
+}
+
+.footer-icons-container {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  margin: 20px;
+}
+
+.footer-icons-container i {
+  font-size: 30px;
+  margin-left: 15px;
+  color: rgb(204,204,204);
+}
+
+.footer-icons-container i:hover {
+  color: red;
+  cursor: pointer;
 }
